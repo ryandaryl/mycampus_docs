@@ -167,3 +167,6 @@ if 'extensions' in globals():
     extensions.append("readthedocs_ext.readthedocs")
 else:
     extensions = ["readthedocs_ext.readthedocs"]
+
+os.system('echo $PWD')
+os.system('sphinx-apidoc -f -o .')
