@@ -168,9 +168,7 @@ if 'extensions' in globals():
 else:
     extensions = ["readthedocs_ext.readthedocs"]
 
-print(os.getcwd())
 extensions.append('sphinx.ext.autodoc')
 sys.path.append('.')
-os.system('sphinx-apidoc -f -o . .')
+os.system('sphinx-apidoc -f -o . . conf.py')
 os.rename('modules.rst', 'index.rst')
-print(os.listdir('.'))
