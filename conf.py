@@ -8,7 +8,7 @@ from recommonmark.parser import CommonMarkParser
 
 print('Hello World')
 
-extensions = ['sphinx.ext.autodoc']
+extensions = []
 templates_path = ['/home/docs/checkouts/readthedocs.org/readthedocs/templates/sphinx', 'templates', '_templates', '.templates']
 source_suffix = ['.rst', '.md']		
 source_parsers = {		
@@ -168,6 +168,6 @@ if 'extensions' in globals():
 else:
     extensions = ["readthedocs_ext.readthedocs"]
 
-print(os.system('echo $PWD'))
-print(os.system('ls'))
+extensions.append('sphinx.ext.autodoc')
+sys.path.append('.')
 os.system('sphinx-apidoc -f -o . .')
