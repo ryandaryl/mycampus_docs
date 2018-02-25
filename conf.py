@@ -168,6 +168,7 @@ if 'extensions' in globals():
 else:
     extensions = ["readthedocs_ext.readthedocs"]
 
+print(os.getcwd())
 extensions.append('sphinx.ext.autodoc')
 sys.path.append('.')
 os.system('sphinx-apidoc -f -o . .')
