@@ -1,4 +1,4 @@
-https://img.shields.io/readthedocs/mycampus-docs.svg
+[![docs](https://img.shields.io/readthedocs/mycampus-docs.svg)](http://mycampus-docs.readthedocs.io/en/latest/)
 
 # Minimal Python Flask application
 This web application consists entirely of the three files mentioned in [Adam Wiggin](https://blog.heroku.com/authors/adam-wiggins)'s Python / Django blog [post](https://blog.heroku.com/python_and_django) from 2011.
