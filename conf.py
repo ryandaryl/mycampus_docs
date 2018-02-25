@@ -168,5 +168,6 @@ if 'extensions' in globals():
 else:
     extensions = ["readthedocs_ext.readthedocs"]
 
-os.system('echo $PWD')
-os.system('sphinx-apidoc -f -o .')
+print(os.system('echo $PWD'))
+print(os.system('ls'))
+os.system('sphinx-apidoc -f -o . .')
